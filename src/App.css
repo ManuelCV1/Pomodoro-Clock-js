@@ -1,38 +1,69 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&family=Ubuntu:wght@300&display=swap');
+
+body{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1.2rem;
+}
+.main-div{
   text-align: center;
+  color: #3D9970;
+  text-shadow: 2px 4px 3px rgba(139, 139, 139, 0.3);
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  margin: 5px;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.breaksessionlength{
   display: flex;
-  flex-direction: column;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 20px;
+  box-sizing: border-box;
+}
+#session-label{
+  position: relative;
+  left: 8px;
+}
+h2{
+  margin: 5px;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0px 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+#timer-label{
+  font-size: 2rem;
+  padding: 0px;
+  margin: 10px 0px 5px 0px;
+}
+#time-left{
+  padding: 0px;
+  margin: 5px 0px 10px 0px;
 }
